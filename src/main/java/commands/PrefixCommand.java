@@ -17,6 +17,12 @@ public class PrefixCommand extends ListenerAdapter {
             if(event.getMessage().getContentRaw().isEmpty()){
                 return;
             }
+
+            if(!ServerSQL.guildExists(event.getGuild().getId()))
+            {
+                ServerSQL.addGuild(event.getGuild().getId());
+            }
+
             if(event.getMessage().getContentRaw().substring(0,1).equalsIgnoreCase(ServerSQL.getPrefix(event.getGuild().getId()))){
                 String[] receivedMessage = event.getMessage().getContentRaw().split(" ");
                 if(receivedMessage.length == 2){

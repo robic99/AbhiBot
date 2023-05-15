@@ -44,6 +44,11 @@ public class ReminderCommand extends ListenerAdapter {
         }
         if (e.getMessage().getContentRaw().isEmpty()) return;
 
+        if(!ServerSQL.guildExists(e.getGuild().getId()))
+        {
+            ServerSQL.addGuild(e.getGuild().getId());
+        }
+
         String guildPrefix = ServerSQL.getPrefix(e.getGuild().getId());
         if (!e.getMessage().getContentRaw().split(" ")[0].substring(0, 1).equalsIgnoreCase(guildPrefix)) return;
         String[] message = e.getMessage().getContentRaw().split(" ");
