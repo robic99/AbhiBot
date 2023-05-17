@@ -23,3 +23,9 @@ Copy "AbhiBot-1.0-SNAPSHOT-jar-with-dependencies.jar" to the directory and renam
 !!! Make sure the "token.txt" and "guildid.txt" files are in the same directory as AbhiBot.jar.
 
 Run the jar file with "java -jar AbhiBot.jar"
+
+# COMMANDS
+!setprefix <single character> example: "!setprefix ;"
+!toggletr on/off
+!togglew on/off
+!reminder 1d1h1m example: "!reminder 1d", "!reminder 1d2h3m". You don't have to use all of the time units, you can pick and choose.
