@@ -25,7 +25,8 @@ Copy "AbhiBot-1.0-SNAPSHOT-jar-with-dependencies.jar" to the directory and renam
 Run the jar file with "java -jar AbhiBot.jar"
 
 # COMMANDS
-!setprefix <single character> example: "!setprefix ;" <br>
-!toggletr on/off <br>
-!togglew on/off <br>
-!reminder 1d1h1m example: "!reminder 1d", "!reminder 1d2h3m". You don't have to use all of the time units, you can pick and choose. <br>
+**!setprefix <single character>** example: **"!setprefix ;" <br>**
+**!toggletr on/off** *To toggle if you want train reminders or not. Default off.* <br>
+**!togglew on/off** *To toggle if you want work reminders or not. Default off.* <br>
+**!toggledaily on/off** *To toggle if you want daily reminders or not. Default off.* <br>
+**!reminder 1d1h1m** example: "**!reminder 1d**", "**!reminder 1d2h3m**". You don't have to use all of the time units, you can pick and choose. <br>
